@@ -4,31 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio-Micah Bottoms</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
+        <!-- style class -->
         <h1 class="header">Micah Bottoms</h1>
 
         <!-- maybe take this out? -->
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
+        
+        <!-- maybe put the headshot in the header? -->
+        <div class="photoMicah">
+            <img src="" alt="">
+        </div>
+
+        <!-- two classes -->
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="#" class="nav-link">placeholder</a></li>
-                <li><a href="#" class="nav-link">placeholder</a></li>
-                <li><a href="#" class="nav-link">placeholder</a></li>
+                <li><a href="#bio" class="nav-link">Bio</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <!-- bio section -->
         <section>
-            <h2 class=""></h2>
+            <!-- class -->
+            <h2 class="topics" id="bio">About me</h2>
+            <p class="aboutMe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, repudiandae maxime! Voluptatum dignissimos doloremque expedita?</p>
+        </section>
+
+        <!-- projects section  -->
+        <section>
+            <h2 class="topics" id="projects">Projects I have developed</h2>
+            <!-- class -->
+            <div class="projects">
+                <div class="project">
+                    <h3>Horiseon Refactor</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quidem voluptate sed ab minus omnis!</p>
+                    <a href="#horiseon"><img src="" alt=""></a>
+                </div>
+
+                <div class="project">
+                    <h3>placeholder</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="project">
+                    <h3>placeholder</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section  -->
+        <section>
+            <h2 class="topics" id="resume">Download my resume</h2>
+            <a href=""></a>
         </section>
 
 
@@ -40,8 +86,25 @@
     
 </body>
 
+<!-- make footer the contact section -->
 <footer>
+    <div>
+        <h2 class="topics" id="contact">Get in contact with me!</h2>
+        <div>
+            <!-- ids for images to links -->
+            <button id="email" aria-label="">
 
+            </button>
+
+            <button id="github" aria-label="">
+
+            </button>
+
+            <button id="linkedIn" aria-label="">
+
+            </button>
+        </div>
+    </div>
 </footer>
 
 </html>
