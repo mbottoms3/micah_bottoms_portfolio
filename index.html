@@ -15,31 +15,34 @@
 <body>
     <header>
         <!-- style class -->
-        <h1 class="header">Micah Bottoms</h1>
+        <h1 class="header">Micah Bottoms Portfolio</h1>
 
         <!-- maybe take this out? -->
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
+        <section>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- maybe put the headshot in the header? -->
+            <div class="photoMicahs">
+                <img class="photoMicah" src="./assets/images/photo (2).jpg" alt="Micah Bottoms headshot">
+            </div>
+    
+            <!-- two classes -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#bio" class="nav-link">Bio</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </section>
         
-        <!-- maybe put the headshot in the header? -->
-        <div class="photoMicah">
-            <img src="" alt="">
-        </div>
-
-        <!-- two classes -->
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#bio" class="nav-link">Bio</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                
-            </ul>
-        </nav>
     </header>
 
-    <main>
+    <main class="main">
 
         <!-- bio section -->
         <section>
@@ -56,8 +59,13 @@
                 <div class="project">
                     <h3>Horiseon Refactor</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quidem voluptate sed ab minus omnis!</p>
-                    <a href="#horiseon"><img src="" alt=""></a>
+                    <!-- <div class="big_container" class="img">
+                        <a href="#horiseon"><img src="./assets/images/screenshot.png" alt="">Screenshot of first project</a> -->
+                    <!-- </div> -->
+                    <!-- I do not understand how to get this image to fit -->
+                    
                 </div>
+                
 
                 <div class="project">
                     <h3>placeholder</h3>
@@ -71,10 +79,14 @@
             </div>
         </section>
 
-        <!-- resume section  -->
+        <!-- add downloadable resume to button -->
         <section>
             <h2 class="topics" id="resume">Download my resume</h2>
-            <a href=""></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Auto width -->
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+
         </section>
 
 
@@ -83,28 +95,29 @@
 
     </main>
 
+    <!-- make footer the contact section -->
+    <footer>
+        <div>
+            <h2 class="topics" id="contact">Get in contact with me!</h2>
+            <div class="footer">
+                <!-- ids for images to links -->
+                <button class="footer" id="email" aria-label="">
+
+                </button>
+
+                <button class="footer" id="gitHub" aria-label="">
+
+                </button>
+
+                <button class="footer" id="linkedIn" aria-label="">
+
+                </button>
+            </div>
+        </div>
+    </footer>
     
 </body>
 
-<!-- make footer the contact section -->
-<footer>
-    <div>
-        <h2 class="topics" id="contact">Get in contact with me!</h2>
-        <div>
-            <!-- ids for images to links -->
-            <button id="email" aria-label="">
 
-            </button>
-
-            <button id="gitHub" aria-label="">
-
-            </button>
-
-            <button id="linkedIn" aria-label="">
-
-            </button>
-        </div>
-    </div>
-</footer>
 
 </html>

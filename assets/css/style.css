@@ -1,33 +1,98 @@
+:root {
+    --themeDark: rgba(19, 30, 128, 0.692);   
+    --themeLight: rgba(95, 194, 219, 0.849);
+    --themeAccent: rgb(178, 201, 223);
+}
+
 * {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 
-
-
+/* build structure and containers first, then aesthetics */
+/* dev desktop first, tailor mobile second */
 
 /* classes and ids below  */
 
-.header{}
+.header{
+    display: flex;
+    justify-content: center;
+    background: var(--themeDark);
+}
 
 .nav-toggle{}
 
-.hamburger{}
+.hamburger{
+    background: var(--themeDark);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    display: block;
+    position: relative;
+}
 
-.photoMicah{}
+.photoMicah{
+    width: 180px;
+    border-radius: 8%;
+}
+/* .photoMicahs{
+    border: 3px solid blue;
+} */
 
-.nav{}
+.nav{
+    text-decoration: none;
+}
 
-.nav-list{}
+.nav-list{
+    
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.nav-link{
+    text-decoration: none;
+}
+.topics{
+    display: flex;
+    justify-content: center;
+    background: var(--themeLight);
+}
 
-.topics{}
+.aboutMe{
+    display: flex;
+    justify-content: center;
+}
 
-.aboutMe{}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    background: var(--themeDark);
+    padding: 1em 0 1em 0;
+    
+    /* border: solid 1px black; */
+    /* margin: 0 1em 0 1em; */
+}
 
-.projects{}
+/* get this to fit in mobile view  */
+.project{
+    justify-content: space-around;
+    background: var(--themeAccent);
+    padding: 0 3em 0 3em;
+    viewport-fit: 100%;
+}
 
-.project{}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+/* add image links for contact */
 #email{}
 
 #gitHub{}
