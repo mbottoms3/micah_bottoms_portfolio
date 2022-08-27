@@ -7,8 +7,11 @@
     <title>Portfolio-Micah Bottoms</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -19,25 +22,34 @@
 
         <!-- maybe take this out? -->
         <section>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            
             <!-- maybe put the headshot in the header? -->
             <div class="photoMicahs">
                 <img class="photoMicah" src="./assets/images/photo (2).jpg" alt="Micah Bottoms headshot">
             </div>
-    
-            <!-- two classes -->
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#bio" class="nav-link">Bio</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#resume" class="nav-link">Resume</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navigation</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </section>
         
     </header>
@@ -61,37 +73,33 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quidem voluptate sed ab minus omnis!</p>
                     <a href="https://mbottoms3.github.io/horiseon_refactor/" target="_blank"><img src="./assets/images/screenshot.png" alt="Screenshot of first project" width="300px" height="300px">
                     </a>
-                   
-                    <!-- I do not understand how to get this image to fit or link for that matter-->
-                    
                 </div>
-                
-
                 <div class="project">
-                    <h3>placeholder</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h3>F00000d</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quidem voluptate sed ab minus omnis!</p>
+                    <a href="https://chuckfee23.github.io/project1-group5/" target="_blank"><img src="./assets/images/F0000d.png" alt="Screenshot of first project" width="200px" height="200px">
+                    </a>
                 </div>
-
                 <div class="project">
-                    <h3>placeholder</h3>
+                    <h3>Workday Scheduler</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="https://mbottoms3.github.io/workflow_scheduler/" target="_blank"><img src="./assets/images/Workflow_Scheduler.png" alt="Screenshot of second project" width="200px" height="200px">
                 </div>
+                <!-- <div class="project">
+                    <h3>Workday Scheduler</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href="https://mbottoms3.github.io/workflow_scheduler/" target="_blank"><img src="./assets/images/Workflow_Scheduler.png" alt="Screenshot of second project" width="200px" height="200px">
+                </div> -->
             </div>
         </section>
 
         <!-- add downloadable resume to button -->
         <section>
-            <h2 class="topics" id="resume">Download my resume</h2>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <!-- Auto width -->
-            <button class="btn"><i class="fa fa-download"></i> Download</button>
-
+            <div><h2 class="topics" id="resume">Download my resume below!</h2></div>
+            <div>
+                <a href="./assets/docs/CurrentResumeDec21.pdf" target="_blank" download="CurrentResumeDec21"><button type="button" class="btn btn-primary btn-sm">Download Resume</button></a>
+            </div>
         </section>
-
-
-
-
 
     </main>
 
@@ -100,18 +108,9 @@
         <div>
             <h2 class="topics" id="contact">Get in contact with me!</h2>
             <div class="footer">
-                <!-- ids for images to links -->
-                <button class="footer" id="email" aria-label="">
-
-                </button>
-
-                <button class="footer" id="gitHub" aria-label="">
-
-                </button>
-
-                <button class="footer" id="linkedIn" aria-label="">
-
-                </button>
+                <a href="mailto: bottoms.micah.3@gmail.com" class="footer"><button class="fa-solid fa-envelope" aria-label=""></button></a>
+                <a href="https://github.com/mbottoms3" target="_blank" class="footer"><button class="fa-brands fa-github" aria-label=""></button></a>
+                <a href="https://www.linkedin.com/in/micah-bottoms-09a096246/" target="_blank" class="footer"><button class="fa-brands fa-linkedin" aria-label=""></button></a>
             </div>
         </div>
     </footer>

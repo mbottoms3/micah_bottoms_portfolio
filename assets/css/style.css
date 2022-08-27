@@ -21,7 +21,7 @@
     background: var(--themeDark);
 }
 
-.nav-toggle{}
+/* .nav-toggle{} */
 
 .hamburger{
     background: var(--themeDark);
@@ -40,11 +40,11 @@
     border: 3px solid blue;
 } */
 
-.nav{
+/* .nav{
     text-decoration: none;
-}
+} */
 
-.nav-list{
+/* .nav-list{
     
     list-style: none;
     display: flex;
@@ -54,7 +54,7 @@
     align-items: flex-end;
     margin: 0;
     padding: 0;
-}
+} */
 .nav-link{
     text-decoration: none;
 }
@@ -86,14 +86,14 @@
     padding: 0 3em 0 3em;
 }
 
+.fix{
+    text-decoration: none;
+}
+
 .footer{
     display: flex;
     justify-content: space-evenly;
 }
 
 /* add image links for contact */
-#email{}
 
-#gitHub{}
-
-#linkedIn{}
